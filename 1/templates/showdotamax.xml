@@ -1,0 +1,19 @@
+$def with(toUser,fromUser,createTime,Nword,length)
+<xml>
+    <ToUserName><![CDATA[$toUser]]></ToUserName>
+    <FromUserName><![CDATA[$fromUser]]></FromUserName>
+    <CreateTime>$createTime</CreateTime>
+    <MsgType><![CDATA[news]]></MsgType>
+    <Content><![CDATA[]]></Content>
+    <ArticleCount>$length</ArticleCount>
+    <Articles>
+    	$for item in Nword:
+        <item>
+            <Title>$item[1]</Title>
+            <Description>$item[2]</Description>
+            <PicUrl>$item[0]</PicUrl>
+            <Url>$item[3]</Url>
+        </item>
+    </Articles>
+    <FuncFlag>0</FuncFlag>
+</xml>

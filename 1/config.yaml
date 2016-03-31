@@ -1,0 +1,15 @@
+name: razzl2
+version: 1
+cron:
+- description: cron_test
+  url: /test
+  schedule: "30 8 * * *"
+ 
+libraries:
+- name: webpy 
+  version: "0.36"
+ 
+- name: lxml
+  version: "2.3.4"
+ 
+...
