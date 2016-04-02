@@ -26,7 +26,7 @@ class WeixinInterface:
 		nonce = data.nonce
 		echostr = data.echostr
 		#自己的token
-		token = "razzl7"
+		token = "*******" # r7
 		#字典排序
 		list = [token,timestamp,nonce]
 		list.sort()
